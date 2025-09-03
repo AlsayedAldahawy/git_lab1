@@ -4,10 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BizLand - Landing Page</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
@@ -15,7 +25,7 @@
 </head>
 
 <body>
-    <header class="bg-light">
+    <header class="bg-light sticky-top">
         <nav class="navbar navbar-expand-lg text-black mx-auto w-90">
             <div class="container-fluid">
                 <a class="navbar-brand logo fs-4 fw-bold" href="#">
@@ -34,16 +44,16 @@
                                 href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Team</a>
+                            <a class="nav-link" href="#team">Team</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -51,7 +61,7 @@
                                 Drop Down <i class="bi bi-chevron-down ms-1"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action 1</a></li>
+                                <li><a class="dropdown-item" href="#faqs">FAQ</a></li>
                                 <li><a class="dropdown-item" href="#">Action 2</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
@@ -68,10 +78,9 @@
         </nav>
     </header>
 
-
     <main>
         <section class="container-fluid hero py-5 m-0 position-relative z-3 d-flex align-items-center"
-            style="background-image: url('./Assets/hero-bg.jpg'); background-size: cover; background-position: center; background-attachment: fixed; height:75vh">
+            style="background-image: url('./Assets/hero-bg.jpg'); background-size: cover; background-repeat:no-repeat; background-attachment: fixed; height:70vh">
             <div class="content container container-md container-sm container-lg py-5">
                 <div class="hero-content my-5">
                     <h1 class="fs-1 fw-bolder">Welcom to <span class="text-primary">BizLand</span></h1>
@@ -90,18 +99,17 @@
                     </div>
                 </div>
             </div>
-            <div class="shade w-100 h-100 position-absolute bg-light bg-opacity-50 top-0 start-0 z-n1"></div>
+            <div class="shade w-100 h-100 position-absolute bg-light bg-opacity-15 top-0 start-0 z-n1"></div>
         </section>
 
-        <section data-aos="fade-up" class="container-fluid">
+        <section data-aos="fade-up" data-aos-duration="1000" class="container-fluid">
             <div class="container container-sm container-md container-lg py-5">
                 <div class="row g-4">
                     <div class="c-s-1 col-sm-12 col-md-6 col-lg-3">
                         <div class="card shadow-lg rounded-2 px-4 py-4 h-100 border-0">
                             <i class="fa-solid fa-basketball text-primary fs-2"></i>
                             <p class="text-black fw-bold my-3">Lorem Ipsum</p>
-                            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab atque
-                                alias facere fuga est officiis placeat eligendi neque dolore totam adipisci.</p>
+                            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                             <div class="mask w-100 bg-primary"></div>
 
                         </div>
@@ -112,8 +120,7 @@
                         <div class="card shadow-lg rounded-2 px-4 py-4 h-100 border-0">
                             <i class="fa-solid fa-file-contract text-primary fs-2"></i>
                             <p class="text-black fw-bold my-3">Lorem Ipsum</p>
-                            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab atque
-                                alias facere fuga est officiis placeat eligendi neque dolore totam adipisci.</p>
+                            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                             <div class="mask w-100 bg-primary"></div>
 
                         </div>
@@ -123,8 +130,7 @@
                         <div class="card shadow-lg rounded-2 px-4 py-4 h-100 border-0">
                             <i class="fa-solid fa-gauge text-primary fs-2"></i>
                             <p class="text-black fw-bold my-3">Lorem Ipsum</p>
-                            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab atque
-                                alias facere fuga est officiis placeat eligendi neque dolore totam adipisci.</p>
+                            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                             <div class="mask w-100 bg-primary"></div>
 
                         </div>
@@ -134,8 +140,7 @@
                         <div class="card shadow-lg rounded-2 px-4 py-4 h-100 border-0">
                             <i class="fa-solid fa-earth-europe text-primary fs-2"></i>
                             <p class="text-black fw-bold my-3">Lorem Ipsum</p>
-                            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab atque
-                                alias facere fuga est officiis placeat eligendi neque dolore totam adipisci.</p>
+                            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                             <div class="mask w-100 bg-primary"></div>
 
                         </div>
@@ -144,7 +149,7 @@
             </div>
         </section>
 
-        <section data-aos="fade-up" class="container-fluid bg-light">
+        <section id="about" data-aos="fade-up" data-aos-duration="1000" class="container-fluid bg-light">
             <div class="container py-3">
                 <div class="content py-5">
                     <div class="content-head d-flex flex-column align-items-center">
@@ -162,10 +167,10 @@
                     </div>
 
                     <div class="row align-items-center">
-                        <div data-aos="fade-right" class="col-12 col-md-12 col-lg-6 p-3">
+                        <div data-aos="fade-right" data-aos-duration="1000" class="col-12 col-md-12 col-lg-6 p-3">
                             <img class="w-100" src="./Assets/about.jpg" alt="About Picture" srcset="">
                         </div>
-                        <div data-aos="fade-left" class="col-12 col-md-12 col-lg-6 p-3 my-5">
+                        <div data-aos="fade-left" data-aos-duration="1000" class="col-12 col-md-12 col-lg-6 p-3 my-5">
                             <p class="fs-2 fw-bolder text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing
                                 elit.</p>
                             <p class="fs-6 text-secondary fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -225,7 +230,7 @@
 
                     </div>
 
-                    <div data-aos="fade-up" class="bars row g-4 my-5">
+                    <div data-aos="fade-up" data-aos-duration="1000" class="bars row g-4 my-5">
                         <div class="col-sm-12 col-lg-6 col-md-12">
                             <div class="skill">
                                 <div class="title d-flex justify-content-between my-0">
@@ -300,7 +305,7 @@
                         </div>
                     </div>
 
-                    <div data-aos="fade-up" class="stats row g-4 my-6">
+                    <div data-aos="fade-up" data-aos-duration="1000" class="stats row g-4 my-6">
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div
                                 class="stat bg-primary bg-opacity-10 position-relative p-4 rounded text-center border shadow-sm">
@@ -367,7 +372,8 @@
             </div>
         </section>
 
-        <section data-aos="fade-up" class="clients d-flex justify-content-center align-items-center bg-primary bg-opacity-10">
+        <section data-aos="fade-up" data-aos-duration="1000"
+            class="clients d-flex justify-content-center align-items-center bg-light bg-opacity-10">
             <div class="container py-4">
                 <div class="row justify-content-center gy-4">
                     <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center align-items-center">
@@ -392,8 +398,7 @@
             </div>
         </section>
 
-
-        <section data-aos="fade-up" class="services container-fluid bg-light">
+        <section id="services" data-aos="fade-up" data-aos-duration="1000" class="services container-fluid bg-light">
             <div class="container py-3 ">
                 <div class="content py-5">
                     <div class="content-head d-flex flex-column align-items-center">
@@ -410,7 +415,7 @@
 
                     </div>
 
-                    <div data-aos="fade-left" class="row g-4">
+                    <div data-aos="fade-left" data-aos-duration="1000" class="row g-4">
 
                         <div class="c-s-1 col-sm-12 col-md-6 col-lg-4">
                             <div
@@ -509,7 +514,7 @@
             </div>
         </section>
 
-        <section data-aos="fade-right" class="team container-fluid bg-light">
+        <section id="team" data-aos="fade-right" data-aos-duration="1000" class="team container-fluid bg-light">
             <div class="container py-2">
                 <div class="content py-2">
                     <div class="content-head d-flex flex-column align-items-center">
@@ -524,7 +529,7 @@
                             elit.</p>
                     </div>
 
-                    <div data-aos="fade-right" class="row g-4">
+                    <div data-aos="fade-right" data-aos-duration="1000" class="row g-4">
 
                         <div class="col-sm-12 col-md-6 col-lg-3">
                             <div class="bg-white rounded h-100">
@@ -573,8 +578,8 @@
             </div>
         </section>
 
-        <section class="faq py-5 bg-light">
-            <div data-aos="fade-up" class="container py-2">
+        <section id="faqs" data-aos="fade-up" data-aos-duration="1000" class="faq py-5 bg-light">
+            <div class="container py-2">
                 <div class="content py-2">
                     <div class="content-head d-flex flex-column align-items-center">
                         <div class="d-flex justify-content-center">
@@ -591,9 +596,9 @@
                 </div>
 
 
-                <div class="accordion accordion-flush" id="faqList">
+                <div data-aos="fade-left" data-aos-duration="1000" class="accordion accordion-flush" id="faqList">
 
-                    <div data-aos="fade-left" class="accordion-item bg-light">
+                    <div  class="accordion-item bg-light">
                         <h2 class="accordion-header">
                             <button class="accordion-button arrow-left collapsed bg-transparent" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#faq1">
@@ -695,7 +700,7 @@
 
     <footer class="footer py-5 bg-light">
         <div class="newsletter py-5">
-            <div data-aos="fade-up" class="container">
+            <div data-aos="fade-up" data-aos-duration="1000" class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 text-center">
                         <h4 class="fw-bold">Join Our Newsletter</h4>
@@ -712,7 +717,7 @@
         </div>
         <div class="bg-white py-5">
             <div class="container">
-                <div data-aos="fade-up" class="row">
+                <div class="row">
                     <div class="col-lg-3 col-md-6 mb-4">
                         <h3 class="fw-bold">Bizland<span class="text-primary">.</span></h3>
                         <p class="text-secondary">
@@ -775,8 +780,6 @@
         </div>
     </footer>
 
-
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
