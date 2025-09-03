@@ -1,0 +1,179 @@
+/*
+ * configuring the fonts
+*/
+
+/* Mulish - Black */
+@font-face {
+  font-family: 'Mulish';
+  src: url('./Assets/fonts/Mulish/static/Mulish-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mulish';
+  src: url('./Assets/fonts/Mulish/static/Mulish-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Mulish - ExtraBold */
+@font-face {
+  font-family: 'Mulish';
+  src: url('./Assets/fonts/Mulish/static/Mulish-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mulish';
+  src: url('./Assets/fonts/Mulish/static/Mulish-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Mulish - Bold */
+@font-face {
+  font-family: 'Mulish';
+  src: url('./Assets/fonts/Mulish/static/Mulish-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mulish';
+  src: url('./Assets/fonts/Mulish/static/Mulish-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Mulish - SemiBold */
+@font-face {
+  font-family: 'Mulish';
+  src: url('./Assets/fonts/Mulish/static/Mulish-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mulish';
+  src: url('./Assets/fonts/Mulish/static/Mulish-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Mulish - Medium */
+@font-face {
+  font-family: 'Mulish';
+  src: url('./Assets/fonts/Mulish/static/Mulish-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mulish';
+  src: url('./Assets/fonts/Mulish/static/Mulish-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Mulish - Regular */
+@font-face {
+  font-family: 'Mulish';
+  src: url('./Assets/fonts/Mulish/static/Mulish-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Mulish - Light */
+@font-face {
+  font-family: 'Mulish';
+  src: url('./Assets/fonts/Mulish/static/Mulish-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mulish';
+  src: url('./Assets/fonts/Mulish/static/Mulish-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Mulish - ExtraLight */
+@font-face {
+  font-family: 'Mulish';
+  src: url('./Assets/fonts/Mulish/static/Mulish-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mulish';
+  src: url('./Assets/fonts/Mulish/static/Mulish-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Mulish - Italic */
+@font-face {
+  font-family: 'Mulish';
+  src: url('./Assets/fonts/Mulish/static/Mulish-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+*{
+    font-family: "Mulish";
+}
+
+
+.w-90{
+    width: 80% ; 
+    /* 
+    * to align the navbar with the page content
+    * Bootstrap width is either too small "w-80 80%" or too high "w-100 100%"
+    */
+}
+
+.fs-7{
+  font-size: small;  /* fs-6 is too big for the drop down arrow*/
+}
+
+.my-6{
+  margin-top: 100px !important;
+}
+
+.accordion-button.arrow-left::after {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+
+.dropdown-toggle::after {
+  display: none !important; 
+}
+
+
+.c-s-1 {
+  position: relative;
+}
+
+.c-s-1 .card{
+  z-index: 9999;
+}
+
+.c-s-1 .card .mask {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0; 
+  opacity: 0;
+  transition: height 0.3s ease, opacity 0.3s ease;
+  z-index: -1 ;
+  border-radius: 10px;
+}
+
+
+
+.c-s-1:hover p, .c-s-1:hover i{
+  color: rgb(255, 255, 255) !important;
+  transition: 0.5s ease;
+}
+.c-s-1:hover .mask {
+  opacity: 0.8;
+  height: 100%;
+}
+
